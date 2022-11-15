@@ -1,0 +1,94 @@
+@import 'variables';
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/geometria/Geometria-Italic.eot');
+  src: local('Geometria Italic'), local('Geometria-Italic'),
+  url('../fonts/geometria/Geometria-Italic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/geometria/Geometria-Italic.woff') format('woff'),
+  url('../fonts/geometria/Geometria-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/geometria/Geometria.eot');
+  src: local('Geometria'),
+  url('../fonts/geometria/Geometria.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/geometria/Geometria.woff') format('woff'),
+  url('../fonts/geometria/Geometria.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/geometria/Geometria-Bold.eot');
+  src: local('Geometria Bold'), local('Geometria-Bold'),
+  url('../fonts/geometria/Geometria-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/geometria/Geometria-Bold.woff') format('woff'),
+  url('../fonts/geometria/Geometria-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Geometria;
+  background-color: #fcfcfc;
+}
+a{
+  text-decoration: none;
+  color: $color-dark;
+}
+
+.my-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.common-title{
+  font-size: 64px;
+  font-weight: bold;
+  padding-bottom: 70px;
+  @media (max-width: 1199px) {
+    font-size: 56px;
+  }
+  @media (max-width: 991px) {
+    font-size: 46px;
+  }
+  @media (max-width: 767px) {
+    font-size: 36px;
+  }
+  @media (max-width: 500px) {
+    font-size: 28px;
+  }
+}
+
+// BTN BLOCK
+.basic-btn{
+  width: 262px;
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  display: block;
+  @media screen and (max-width: 1399px){
+    width: 220px;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 1199px) {
+    width: 200px;
+    font-size: 16px;
+  }
+}
+.white-btn{
+  background-color: #fff;
+  color: $color-dark;
+}
+.dark-btn{
+  background-color: $color-dark;
+  color: #fff;
+}
